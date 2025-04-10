@@ -12,6 +12,9 @@ public enum Cidade {
         this.ddd = ddd;
         this.nome = nome;
     }
+    public static Cidade getCidade(String nome){
+        return Cidade.valueOf(nome.trim().replace("", "_").toUpperCase());
+    }
 
     public int getDdd() {
         return ddd;

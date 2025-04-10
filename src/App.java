@@ -1,11 +1,13 @@
 import java.util.Scanner;
 
 import model.Cidade;
+import model.Pessoa;
+import view.PessoaView;
 
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
-            Scanner scanner = new Scanner(System.in);
+            Scanner in = new Scanner(System.in);
 
         System.out.println("aula 11-Enum");
         System.out.println(Cidade.CURITIBA);
@@ -20,8 +22,10 @@ public class App {
 
         System.out.println("digite o nome de uma cidade: ");
         Cidade outraCidade = Cidade.valueOf(
-            scanner.nextLine().trim().toUpperCase().replace("", "_")
+            in.nextLine().trim().toUpperCase().replace("", "_")
         );
         System.out.println("cidade digitada: "+outraCidade);
+
+        PessoaView.main(args);
     }
 }
