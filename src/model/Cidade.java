@@ -17,7 +17,7 @@ public enum Cidade {
         return ddd;
     }
 
-    public void setDdd(int ddd) {
+    private void setDdd(int ddd) {
         this.ddd = ddd;
     }
 
@@ -25,7 +25,7 @@ public enum Cidade {
         return nome;
     }
 
-    public void setNome(String nome) {
+    private void setNome(String nome) {
         this.nome = nome;
     }
     @Override
