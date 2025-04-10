@@ -10,5 +10,8 @@ public class PessoaView {
         Pessoa pessoa = new Pessoa("pessoa1", Cidade.SAO_JOSE_DOS_PINHAIS);
 
         System.out.println("digite a nova cidade: ");
+
+        pessoa.setCidade(scanner.nextLine());
+        System.out.println(pessoa);
     }
 }
