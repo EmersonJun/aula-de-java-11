@@ -1,13 +1,13 @@
 package model;
 
 public enum DiaDaSemana {
-    SEGUNDA(true, "nome"),
-    TERCA(true, "nome"),
-    QUARTA(true, "nome"),
-    QUINTA(true, "nome"),
-    SEXTA(true, "nome"),
-    SABADO(true, "nome"),
-    DOMINGO(true, "nome"); 
+    SEGUNDA(true, "segunda"),
+    TERCA(true, "terca"),
+    QUARTA(true, "quarta"),
+    QUINTA(true, "quinta"),
+    SEXTA(true, "sexta"),
+    SABADO(true, "sabado"),
+    DOMINGO(true, "domingo"); 
 
     private boolean ehUtil;
     private String dia;
@@ -16,7 +16,7 @@ public enum DiaDaSemana {
         this.dia = dia;
     }
     public DiaDaSemana getDiaDaSemana(String dia){
-        return DiaDaSemana.valueOf(dia.trim().toUpperCase().replace("feira ", ""));
+        return DiaDaSemana.valueOf(dia.trim().toUpperCase().replace("-feira ", ""));
     }
 
     public boolean isEhUtil() {
